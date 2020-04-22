@@ -3,7 +3,7 @@ import json
 import hashlib
 
 # Faz o request para receber as informações e formata o request para JSON
-req = requests.get('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=4ce222b07652fee04a8e7e48f37a923d5322ef14')
+req = requests.get('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=MEU_TOKEN')
 r = req.json()
 
 #Cria o arquivo "answer.json" e popula o arquivo com as informações do request
@@ -33,7 +33,7 @@ with open('answer.json', 'w') as arquivo :
 
 #Envia resposta via POST
 
-token = '4ce222b07652fee04a8e7e48f37a923d5322ef14'
+token = ''
 params = {'token' : token}
 
 url = 'https://api.codenation.dev/v1/challenge/dev-ps/submit-solution'
