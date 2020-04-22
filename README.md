@@ -11,6 +11,7 @@ Cifrado: d oljhlud udsrvd pduurp vdowrx vreuh r fdfkruur fdqvdgr
 Regras
 As mensagens serão convertidas para minúsculas tanto para a criptografia quanto para descriptografia.
 No nosso caso os números e pontos serão mantidos, ou seja:
+
 Normal: 1a.a
 
 Cifrado: 1d.d
@@ -19,8 +20,6 @@ Escrever programa, em qualquer linguagem de programação, que faça uma requisi
 
 https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=SEU_TOKEN
 Para encontrar o seu token , acesse a plataforma Codenation, faça o login e a informação estará na tela, conforme no exemplo abaixo:
-
-
 
 O resultado da requisição vai ser um JSON conforme o exemplo:
 

@@ -26,6 +26,8 @@ resumocripto = hashlib.sha1(descriptografado.encode())
 r['decifrado'] = descriptografado
 r['resumo_criptografico'] = resumocripto.hexdigest()
 
+
+#Abre o arquivo e salva com os novos dados
 with open('answer.json', 'w') as arquivo :
     json.dump(r, arquivo, indent=4)
 
@@ -40,7 +42,3 @@ env = requests.post(url, files=answer, params=params)
 print(env.status_code)
 print(env.text)
 
-
-# res = {'res' : open('answer.json', 'rb')}
-
-# env = requests.post(f'https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=4ce222b07652fee04a8e7e48f37a923d5322ef14&file={res}')
